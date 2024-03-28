@@ -4,5 +4,7 @@ USE SCHEMA COMMON;
 ALTER TABLE RAW_CAD
 --ADD COLUMN CLASS_STAT_CD  VARCHAR(50); --Added as part of Alt MKT 0.1 release
 
-ADD COLUMN MRKT_REGN  VARCHAR(50);  --Added as part of LEN 0.1 release
+--ADD COLUMN MRKT_REGN  VARCHAR(50);  --Added as part of LEN 0.1 release
+
+ADD COLUMN POL_SYM_CM VARCHAR(50);  --Added as part of SUR 0.1 release
 
