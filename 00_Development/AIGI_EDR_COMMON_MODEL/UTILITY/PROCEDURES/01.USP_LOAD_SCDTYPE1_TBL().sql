@@ -9,6 +9,7 @@ AS '
     // -- 10th Apr''21	Swati Gupta						Procedure to load HUB and LINK tables for vault
     // -- 19th Apr''21	Lalchand Khilwani				Audit Logging, Error Recovery with restartability implementation and Procedure Execution Status Check for PID
     // -- 28th Jul''21	Lalchand Khilwani	ED14664		Changes for the Source System Cd level implmentation
+    // -- 28th Mar''24	Akshay Nemade				Error Message Standerdization
     // -- ================================================================================================================================================
     // -- Parameters:	
 	// -- PROC_CONTEXT_DB		- The Procedure context Database for referencing the tables
@@ -239,10 +240,10 @@ catch (err) {
 	}
 	else
 	{
-		return "SUCCESS: For Date[UTC]: "+v_proc_start_time+" For Target Table "+v_tgt_tbl+" and PID="+v_pid+", except few commands";
+		return "Procedrure SUCCESS: For Date[UTC]: "+v_proc_start_time+" For Target Table "+v_tgt_tbl+" and PID="+v_pid+", except few commands";
 	}
 	// exit sproc with error message
-	return "FAILED For Date[UTC]: "+v_proc_start_time+ "\\nFor Target Table "+v_tgt_tbl+"\\nWith Error Message : " + err.message+"\\nPID="+v_pid;;
+	return "Procedrure FAILED For Date[UTC]: "+v_proc_start_time+ "\\nFor Target Table "+v_tgt_tbl+"\\nWith Error Message : " + err.message+"\\nPID="+v_pid;;
     
     }
 ';
