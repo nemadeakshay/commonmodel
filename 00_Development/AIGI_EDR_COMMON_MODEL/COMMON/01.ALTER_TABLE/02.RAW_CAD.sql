@@ -1,3 +1,5 @@
+-- liquibase formatted sql
+-- changeset ALT_MKT_0.1:ADD1CLASS1STAT1CD-1
 USE DATABASE AIGI_EDR_COMMONMODEL;
 USE SCHEMA COMMON;
 
