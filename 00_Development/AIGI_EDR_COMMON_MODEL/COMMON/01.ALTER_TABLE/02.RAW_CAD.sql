@@ -1,10 +1,14 @@
+-- liquibase formatted sql
+-- changeset ALT_MKT_0.1:ADD1CLASS1STAT1CD-1
 USE DATABASE AIGI_EDR_COMMONMODEL;
 USE SCHEMA COMMON;
 
 ALTER TABLE RAW_CAD
---ADD COLUMN CLASS_STAT_CD  VARCHAR(50); --Added as part of Alt MKT 0.1 release
+ADD COLUMN CLASS_STAT_CD  VARCHAR(50); --Added as part of Alt MKT 0.1 release
 
---ADD COLUMN MRKT_REGN  VARCHAR(50);  --Added as part of LEN 0.1 release
+-- changeset LEN_0.1:ADD1MRKT1REGN-1
+ADD COLUMN MRKT_REGN  VARCHAR(50);  --Added as part of LEN 0.1 release
 
-ADD COLUMN POL_SYM_CM VARCHAR(50);  --Added as part of SUR 0.1 release
+-- changeset SUR_0.1:ADD1POL1SYM1CD-1
+ADD COLUMN POL_SYM_CD VARCHAR(50);  --Added as part of SUR 0.1 release
 
